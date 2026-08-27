@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <!--nav section-->
+    <section>
+        <nav class="bg-base-100 shadow-sm">
+            <div class="navbar container mx-auto">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="-1"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/about.html">About</a></li>
+                            <li><a href="/portfolio.html">Portfolio</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
+                            <li><a href="/service.html">Service</a></li>
+                        </ul>
+
+                    </div>
+                    <a class="btn btn-ghost text-xl">My portfolio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/portfolio.html">Portfolio</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="/service.html">Service</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <button class="btn btn-primary">button</button>
+                </div>
+            </div>
+        </nav>
+    </section><br>
+    <!--Page title section-->
+    <section>
+        <div class="hero bg-base-200 min-h-30 bg-blue-200">
+            <div class="hero-content text-center">
+                <div class="max-w-md">
+                    <h1 class="text-5xl font-bold">About Me</h1>
+                    <p class="py-6">
+                        Know more about my personal and professional details
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section><br>
+    <!--Personal Biography Section-->
+    <section>
+        <div class="card card-border bg-base-100 w-full mx-auto">
+            <div class="card-body">
+                <h2 class="card-title">Personal Biography</h2>
+                <p>My name is John Doe. I am a student and beginner web developer. I am interested in creating websites
+                    using simple and clean code.<br>I have basic knowledge of HTML, Tailwind CSS, DaisyUI, and
+                    JavaScript. I enjoy learning new things
+                    and practicing with small projects.</p>
+                <div class="card-actions justify-end">
+
+                </div>
+            </div>
+        </div>
+    </section><br>
+    <!--Clint section-->
+    <section>
+
+        <h1 class="text-5xl font-bold text-center">Existing Clients</h1><br>
+        <section>
+            <div class="grid md:grid-cols-4 gap-1">
+
+
+
+
+
+                <div class="card bg-base-100 w-96 shadow-sm ">
+                    <div class="card-body">
+                        <h2 class="card-title">ABC Company</h2>
+                        <p>
+                            Landing Page Design
+                        </p>
+                        <div class="card-actions justify-end">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 w-96 shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title">Local Shop</h2>
+                        <p>
+                            Business Website
+                        </p>
+                        <div class="card-actions justify-end">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 w-96 shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title">School Project</h2>
+                        <p>
+                            Education Website
+                        </p>
+                        <div class="card-actions justify-end">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 w-96 shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title">Personal Client</h2>
+                        <p>
+                            Portfolio Page
+                        </p>
+                        <div class="card-actions justify-end">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section> <br>
+    <!--Skill Information section-->
+    <Section>
+
+        <div class="p-6 bg-white rounded-xl shadow-md max-w-md mx-auto space-y-4">
+
+            <h1 class="text-5xl font-bold text-center">Skill Information</h1><br>
+            <div class="flex flex-col gap-1 w-full">
+                <span class="font-medium text-gray-700">HTML</span>
+                <progress class="progress progress-primary w-56" value="100" max="100"></progress>
+            </div>
+            <div class="flex flex-col gap-1">
+                <span class="font-medium text-gray-700">tailwind CSS</span>
+                <progress class="progress progress-primary w-56" value="70" max="100"></progress>
+                <div class="flex flex-col gap-1">
+                    <span class="font-medium text-gray-700">DaisyUI</span>
+                    <progress class="progress progress-primary w-56" value="40" max="100"></progress>
+                    <div class="flex flex-col gap-1">
+                        <span class="font-medium text-gray-700">JavaScript</span>
+                        <progress class="progress progress-primary w-56" value="10" max="100"></progress>
+                    </div>
+
+
+
+
+
+    </Section>
+    <!--footer section-->
+    <footer class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
+        <aside>
+            <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+        </aside>
+    </footer>
+</body>
+
+</html>

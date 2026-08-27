@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <!--nav section-->
+    <section>
+        <nav class="bg-base-100 shadow-sm">
+            <div class="navbar container mx-auto">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="-1"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/about.html">About</a></li>
+                            <li><a href="/portfolio.html">Portfolio</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
+                            <li><a href="/service.html">Service</a></li>
+                        </ul>
+
+                    </div>
+                    <a class="btn btn-ghost text-xl">My portfolio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/portfolio.html">Portfolio</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="/service.html">Service</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <button class="btn btn-primary">button</button>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!--Carousel section-->
+    <section>
+        <div class="carousel w-full min-h[400px]">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img alt="Tailwind CSS slide example"
+                    src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp" class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img alt="Tailwind CSS slide example"
+                    src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp" class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img alt="Tailwind CSS slide example"
+                    src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp" class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img alt="Tailwind CSS slide example"
+                    src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp" class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--About Me section-->
+    <section>
+        <div class="hero bg-base-200 min-h-screen">
+            <div class="hero-content flex-col lg:flex-row">
+                <img alt="Tailwind CSS hero component" src="/mim.jpeg" class="max-w-sm shadow-2xl" />
+                <div>
+                    <h1 class="text-5xl font-bold">About Me</h1>
+                    <p class="py-6">
+                        Hello! I am Sultana Parvin Mim, a passionate and motivated learner with an interest in web
+                        design
+                        and front-end development. I enjoy creating clean, modern, and responsive websites using HTML,
+                        CSS, Tailwind CSS, and DaisyUI. I am always eager to learn new technologies, improve my skills,
+                        and take on new challenges. My goal is to build useful and user-friendly websites while
+                        continuously growing as a web developer.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section><br>
+    <!--Misson & vission section-->
+    <section>
+
+
+        <h1 class="text-5xl font-bold text-center">Career Mission and Vision</h1>
+        <section>
+            <div class="grid md:grid-cols-2 gap">
+
+
+
+
+
+
+
+
+                <div class="card bg-base-100 w-96 shadow-sm ">
+                    <div class="card-body">
+                        <h2 class="card-title">Mission</h2>
+                        <p>My mission is to learn web development properly and create useful websites for people and
+                            businesses.
+                        </p>
+                        <div class="card-actions justify-end">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 w-96 shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title">vision</h2>
+                        <p>My vision is to become a professional web developer and build modern, clean, and responsive
+                            websites.
+                        </p>
+                        <div class="card-actions justify-end">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </section><br>
+    <!--Service List-->
+    <section>
+
+        <h1 class="text-5xl font-bold text-center">Service List</h1>
+        <section>
+            <div class="grid md:grid-cols-3 gap-3">
+
+
+
+
+
+                <div class="card bg-base-100 w-96 shadow-sm ">
+                    <div class="card-body">
+                        <h2 class="card-title">Web Design</h2>
+                        <p>
+                            I can create simple and clean website layouts.
+                        </p>
+                        <div class="card-actions justify-end">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 w-96 shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title">Responsive Design</h2>
+                        <p>
+                            I can make pages responsive for mobile, tablet, and desktop.
+                        </p>
+                        <div class="card-actions justify-end">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 w-96 shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title">Contact Form</h2>
+                        <p>
+                            I can create basic contact forms with simple validation.
+                        </p>
+                        <div class="card-actions justify-end">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section><br>
+    <!--Feedback section-->
+    <section>
+
+        <h1 class="text-5xl font-bold text-center">Client Feedback</h1>
+        <section>
+            <div class="grid md:grid-cols-3 gap-3">
+
+
+
+
+                <div class="card bg-base-100 w-96 shadow-sm ">
+                    <div class="card-body">
+
+                        <p>
+                            "The website design was simple and clean."<br>
+
+                            <strong> Client One</strong>
+                        </p>
+                        <div class="card-actions justify-end">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 w-96 shadow-sm">
+                    <div class="card-body">
+
+                        <p>
+                            "Good work for a beginner project."<br>
+
+                            <strong> Client Two</strong>
+                        </p>
+                        <div class="card-actions justify-end">
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-base-100 w-96 shadow-sm">
+                    <div class="card-body">
+
+                        <p>
+                            "The page worked well on mobile devices."<br>
+                            <strong> Client Three</strong>
+                        </p>
+                        <div class="card-actions justify-end">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+
+    <!--footer section-->
+    <footer class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
+        <aside>
+            <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+        </aside>
+    </footer>
+
+</body>
+
+</html>
