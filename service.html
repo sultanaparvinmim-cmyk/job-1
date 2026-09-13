@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Personal Portfolio</title>
+    <!-- Tailwind CSS & daisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen font-sans text-gray-800">
+    <!--nav section-->
+    <section>
+        <nav class="bg-base-100 shadow-sm">
+            <div class="navbar container mx-auto">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="-1"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/about.html">About</a></li>
+                            <li><a href="/portfolio.html">Portfolio</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
+                            <li><a href="/service.html">Service</a></li>
+                        </ul>
+
+                    </div>
+                    <a class="btn btn-ghost text-xl">My portfolio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/portfolio.html">Portfolio</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="/service.html">Service</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <button class="btn btn-primary">button</button>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Header / Navbar (Optional) -->
+    <header class="max-w-6xl mx-auto px-4 py-4 flex justify-end">
+        <a href="#" class="text-sm font-medium hover:underline">Home</a>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 pb-16 space-y-12">
+
+        <!-- a. Page Title Section -->
+        <section class="bg-blue-50/60 rounded-xl p-8 text-center border border-blue-100/50 shadow-sm">
+            <h1 class="text-3xl font-bold mb-2 text-gray-900">My Services</h1>
+            <p class="text-gray-600 text-sm">I provide simple web design related services.</p>
+        </section>
+
+        <!-- b. All Service Grid Section -->
+        <section>
+            <h2 class="text-2xl font-bold text-center mb-6 text-gray-900">All Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Card 1 -->
+                <div class="bg-white p-6 rounded-xl border border-gray-200/80 shadow-sm">
+                    <h3 class="font-bold text-gray-900 mb-2">Personal Website</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed">I can create a simple personal website.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-6 rounded-xl border border-gray-200/80 shadow-sm">
+                    <h3 class="font-bold text-gray-900 mb-2">Portfolio Website</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed">I can create a basic portfolio website for
+                        students.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-6 rounded-xl border border-gray-200/80 shadow-sm">
+                    <h3 class="font-bold text-gray-900 mb-2">Landing Page</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed">I can create a simple landing page for small
+                        businesses.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white p-6 rounded-xl border border-gray-200/80 shadow-sm">
+                    <h3 class="font-bold text-gray-900 mb-2">Responsive Design</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed">I can make website sections responsive.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white p-6 rounded-xl border border-gray-200/80 shadow-sm">
+                    <h3 class="font-bold text-gray-900 mb-2">Form Design</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed">I can design basic contact forms.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white p-6 rounded-xl border border-gray-200/80 shadow-sm">
+                    <h3 class="font-bold text-gray-900 mb-2">Website Update</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed">I can update text, images, and sections.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- c. Client Section -->
+        <section>
+            <h2 class="text-2xl font-bold text-center mb-6 text-gray-900">Clients</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+                <div class="bg-white p-5 rounded-xl border border-gray-200/80 text-center shadow-sm">
+                    <h4 class="font-bold text-xs text-gray-800">Client A</h4>
+                    <p class="text-[11px] text-gray-500">Portfolio Website</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-xl border border-gray-200/80 text-center shadow-sm">
+                    <h4 class="font-bold text-xs text-gray-800">Client B</h4>
+                    <p class="text-[11px] text-gray-500">Landing Page</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-xl border border-gray-200/80 text-center shadow-sm">
+                    <h4 class="font-bold text-xs text-gray-800">Client C</h4>
+                    <p class="text-[11px] text-gray-500">Business Page</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-xl border border-gray-200/80 text-center shadow-sm">
+                    <h4 class="font-bold text-xs text-gray-800">Client D</h4>
+                    <p class="text-[11px] text-gray-500">Contact Page</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- d. Frequently Asked Questions (FAQ) Section -->
+        <!-- Using daisyUI CSS Radio Accordion (No JS required) -->
+        <section class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold text-center mb-6 text-gray-900">Frequently Asked Questions</h2>
+
+            <div class="space-y-3">
+
+                <!-- FAQ Item 1 (Opened by default) -->
+                <div class="collapse collapse-arrow bg-white border border-gray-200/80 rounded-xl shadow-sm">
+                    <input type="radio" name="faq-accordion" checked="checked" />
+                    <div class="collapse-title font-semibold text-xs sm:text-sm text-gray-800">
+                        What type of website can you create?
+                    </div>
+                    <div class="collapse-content text-xs text-gray-600">
+                        <p>I can create simple personal, portfolio, and landing page websites.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="collapse collapse-arrow bg-white border border-gray-200/80 rounded-xl shadow-sm">
+                    <input type="radio" name="faq-accordion" />
+                    <div class="collapse-title font-semibold text-xs sm:text-sm text-gray-800">
+                        Do you make responsive websites?
+                    </div>
+                    <div class="collapse-content text-xs text-gray-600">
+                        <p>Yes, all websites built are fully responsive across laptops, tablets, and mobile devices.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="collapse collapse-arrow bg-white border border-gray-200/80 rounded-xl shadow-sm">
+                    <input type="radio" name="faq-accordion" />
+                    <div class="collapse-title font-semibold text-xs sm:text-sm text-gray-800">
+                        Do you use backend or database?
+                    </div>
+                    <div class="collapse-content text-xs text-gray-600">
+                        <p>No, I primarily focus on frontend static websites using HTML, CSS, Tailwind, and JavaScript.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="collapse collapse-arrow bg-white border border-gray-200/80 rounded-xl shadow-sm">
+                    <input type="radio" name="faq-accordion" />
+                    <div class="collapse-title font-semibold text-xs sm:text-sm text-gray-800">
+                        Can you add a contact form?
+                    </div>
+                    <div class="collapse-content text-xs text-gray-600">
+                        <p>Yes, I can design simple contact forms and integrate third-party form handlers like
+                            Formspree.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="collapse collapse-arrow bg-white border border-gray-200/80 rounded-xl shadow-sm">
+                    <input type="radio" name="faq-accordion" />
+                    <div class="collapse-title font-semibold text-xs sm:text-sm text-gray-800">
+                        How long does a simple website take?
+                    </div>
+                    <div class="collapse-content text-xs text-gray-600">
+                        <p>A simple website typically takes around 2 to 5 days depending on the design requirements.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 text-xs text-gray-500">
+        <p class="font-medium">My Portfolio</p>
+        <p>Simple Personal Portfolio Website</p>
+    </footer>
+
+</body>
+
+</html>
