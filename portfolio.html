@@ -4,17 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        section {
-            scroll-margin-top: 80px;
-        }
-    </style>
+
+    <title>My Portfolio</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
 </head>
 
-<body class="bg-light">
+<body class="bg-gray-100 text-gray-800">
     <!--nav section-->
     <section>
         <nav class="bg-base-100 shadow-sm">
@@ -54,135 +55,438 @@
                 </div>
             </div>
         </nav>
-    </section><br>
+    </section>
 
-    <!-- a. Page Title Section -->
-    <header class="bg-dark text-white text-center py-5 shadow">
-        <h1 class="display-4 fw-bold">My Portfolio</h1>
-        <p class="lead">Geospatial Analyst & Environmental Geographer</p>
-    </header>
+    <!-- =========================
+         a. Page Title Section
+    ========================== -->
+    <section class="bg-gray-800 text-white py-16 text-center max-w-6xl mx-auto px-4 my-6 rounded-2xl">
 
-    <div class="container my-5">
+        <h1 class="text-4xl md:text-5xl font-bold">
+            My Portfolio
+        </h1>
 
-        <!-- b. Personal Information Section -->
-        <section id="personal-info" class="mb-5">
-            <h2 class="border-bottom pb-2 mb-3 text-primary">Personal Information</h2>
-            <div class="card border-0 shadow-sm p-4">
-                <div class="row">
-                    <div class="col-md-8">
-                        <h4 class="mb-3">Sultana Parvin Mim</h4> <!-- Replace with your name -->
-                        <p><strong>Location:</strong> Dhaka, Bangladesh</p>
-                        <p><strong>Email:</strong> your.email@example.com</p>
-                        <p class="mb-0"><strong>Profile:</strong> Dedicated student of Geography and Environment with a
-                            strong focus on geospatial data analysis, map interpretation, and remote sensing. Passionate
-                            about applying GIS tools to solve spatial and environmental challenges.</p>
+        <p class="mt-4 text-lg text-gray-300">
+            Personal Information, Education, Skills & Experience
+        </p>
+
+    </section>
+
+
+    <!-- Main Container -->
+    <main class="max-w-6xl mx-auto px-4 py-12">
+
+
+        <!-- =========================
+             b. Personal Information
+        ========================== -->
+        <section class="mb-12">
+
+            <h2 class="text-3xl font-bold text-center mb-8">
+                Personal Information
+            </h2>
+
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+
+                <div class="grid md:grid-cols-2 gap-6">
+
+                    <div>
+                        <p class="font-semibold">Name</p>
+                        <p class="text-gray-600">Sultana Parvin Mim</p>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- c. Education Information Section -->
-        <section id="education" class="mb-5">
-            <h2 class="border-bottom pb-2 mb-3 text-primary">Education</h2>
-            <div class="list-group shadow-sm">
-                <div class="list-group-item p-4">
-                    <h5 class="mb-1">B.Sc. (Hons.) in Geography and Environment</h5>
-                    <p class="text-muted mb-0">Affiliated College of Dhaka University | 4th Year</p>
-                </div>
-                <div class="list-group-item p-4">
-                    <h5 class="mb-1">Secondary / Higher Secondary Education</h5>
-                    <p class="text-muted mb-0">Completed in 2018</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- d. Special Skill Section -->
-        <section id="skills" class="mb-5">
-            <h2 class="border-bottom pb-2 mb-3 text-primary">Special Skills</h2>
-            <div class="card border-0 shadow-sm p-4">
-                <div class="d-flex flex-wrap gap-2">
-                    <span class="badge bg-primary fs-6 px-3 py-2">QGIS</span>
-                    <span class="badge bg-primary fs-6 px-3 py-2">Spatial Analysis</span>
-                    <span class="badge bg-primary fs-6 px-3 py-2">Remote Sensing</span>
-                    <span class="badge bg-primary fs-6 px-3 py-2">Web GIS</span>
-                    <span class="badge bg-secondary fs-6 px-3 py-2">Map Interpretation</span>
-                    <span class="badge bg-secondary fs-6 px-3 py-2">Raster & Vector Processing</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- e. Training Certification Section (Using Bootstrap Modal) -->
-        <section id="training" class="mb-5">
-            <h2 class="border-bottom pb-2 mb-3 text-primary">Training & Certifications</h2>
-            <div class="card border-0 shadow-sm p-4 text-center">
-                <h5 class="mb-3">Geospatial Data Analysis and Management</h5>
-                <p class="text-muted">Bangladesh Institute of Management (BIM)</p>
-
-                <!-- Modal Trigger Button -->
-                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
-                    data-bs-target="#certificateModal">
-                    View Certificate Details
-                </button>
-            </div>
-
-            <!-- Bootstrap Modal -->
-            <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header bg-primary text-white">
-                            <h5 class="modal-title" id="certificateModalLabel">Training Certificate</h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body text-center p-4">
-                            <h4>Geospatial Data Analysis and Management</h4>
-                            <h6 class="text-muted mb-4">Bangladesh Institute of Management (BIM)</h6>
-                            <div class="text-start mb-4">
-                                <p><strong>Duration:</strong> 14-Day Basic Training Course</p>
-                                <p><strong>Date:</strong> April 18, 2026 - May 3, 2026</p>
-                                <p><strong>Core Competencies:</strong> QGIS workflows, spatial analysis methodologies,
-                                    remote sensing interpretation, and Web GIS deployment.</p>
-                            </div>
-                            <!-- Placeholder for actual certificate image -->
-                            <div class="bg-light border p-5 text-muted rounded">
-                                [Insert scanned certificate image here]
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        </div>
+                    <div>
+                        <p class="font-semibold">Date of Birth</p>
+                        <p class="text-gray-600">28 January 2002</p>
                     </div>
+
+                    <div>
+                        <p class="font-semibold">Email</p>
+                        <p class="text-gray-600">
+                            sultanaparvinmim@gmail.com
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="font-semibold">Phone</p>
+                        <p class="text-gray-600">
+                            0130334414
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="font-semibold">Address</p>
+                        <p class="text-gray-600">
+                            Dhaka, Bangladesh
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="font-semibold">Nationality</p>
+                        <p class="text-gray-600">
+                            Bangladeshi
+                        </p>
+                    </div>
+
                 </div>
+
             </div>
+
         </section>
 
-        <!-- f. Working Experience Section -->
-        <section id="experience" class="mb-5">
-            <h2 class="border-bottom pb-2 mb-3 text-primary">Working Experience</h2>
-            <div class="card border-0 shadow-sm p-4 border-start border-primary border-4">
-                <h5 class="mb-1">Academic Research & GIS Project Analyst</h5>
-                <p class="text-muted mb-3">Department of Geography and Environment</p>
-                <ul class="mb-0">
-                    <li>Conducted mathematical calculations and spatial modeling regarding network graph centrality.
-                    </li>
-                    <li>Analyzed political geography structures and regional systems (UK/USA political organization).
-                    </li>
-                    <li>Applied practical map interpretation techniques for environmental assessment projects.</li>
-                </ul>
+
+        <!-- =========================
+             c. Education Information
+        ========================== -->
+        <section class="mb-12">
+
+            <h2 class="text-3xl font-bold text-center mb-8">
+                Education Information
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-6">
+
+                <!-- Education 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+
+                    <h3 class="text-xl font-bold">
+                        Master's Degree
+                    </h3>
+
+                    <p class="mt-3 text-gray-600">
+                        Geography & Environment
+                    </p>
+
+                    <p class="text-gray-500 mt-2">
+                        Begum Badrunnessa Govt. Girls' College
+                    </p>
+
+                </div>
+
+
+                <!-- Education 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+
+                    <h3 class="text-xl font-bold">
+                        BSc Honours
+                    </h3>
+
+                    <p class="mt-3 text-gray-600">
+                        Geography & Environment
+                    </p>
+
+                    <p class="text-gray-500 mt-2">
+                        Begum Badrunnessa Govt. Girls' College
+                    </p>
+
+                </div>
+
+
+                <!-- Education 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+
+                    <h3 class="text-xl font-bold">
+                        Higher Secondary Certificate
+                    </h3>
+
+                    <p class="mt-3 text-gray-600">
+                        HSC
+                    </p>
+
+                    <p class="text-gray-500 mt-2">
+                        Bangladesh
+                    </p>
+
+                </div>
+
             </div>
+
         </section>
 
-    </div>
 
-    <!-- Bootstrap 5 JS Bundle (Includes Popper for Modals) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!--footer section-->
-    <footer class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
-        <aside>
-            <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
-        </aside>
+        <!-- =========================
+     Special Skills
+========================== -->
+        <section class="py-12">
+
+            <!-- Section Title -->
+            <h2 class="text-4xl font-bold text-center text-slate-800 mb-12">
+                Special Skills
+            </h2>
+
+            <!-- Skills Cards -->
+            <div class="space-y-10">
+
+                <!-- Skill 1 -->
+                <div class="bg-white rounded-3xl shadow-md p-8 md:p-10">
+
+                    <h3 class="text-2xl md:text-3xl font-bold text-slate-800">
+                        HTML Structure
+                    </h3>
+
+                    <p class="text-lg md:text-xl text-slate-700 mt-5 leading-relaxed">
+                        I can create basic HTML page structure.
+                    </p>
+
+                </div>
+
+
+                <!-- Skill 2 -->
+                <div class="bg-white rounded-3xl shadow-md p-8 md:p-10">
+
+                    <h3 class="text-2xl md:text-3xl font-bold text-slate-800">
+                        Responsive Layout
+                    </h3>
+
+                    <p class="text-lg md:text-xl text-slate-700 mt-5 leading-relaxed">
+                        I can create responsive sections using Tailwind CSS.
+                    </p>
+
+                </div>
+
+
+                <!-- Skill 3 -->
+                <div class="bg-white rounded-3xl shadow-md p-8 md:p-10">
+
+                    <h3 class="text-2xl md:text-3xl font-bold text-slate-800">
+                        Basic JavaScript
+                    </h3>
+
+                    <p class="text-lg md:text-xl text-slate-700 mt-5 leading-relaxed">
+                        I can write simple JavaScript for form validation.
+                    </p>
+
+                </div>
+
+
+                <!-- Skill 4 -->
+                <div class="bg-white rounded-3xl shadow-md p-8 md:p-10">
+
+                    <h3 class="text-2xl md:text-3xl font-bold text-slate-800">
+                        GIS & Mapping
+                    </h3>
+
+                    <p class="text-lg md:text-xl text-slate-700 mt-5 leading-relaxed">
+                        I have basic knowledge of GIS, QGIS and digital mapping.
+                    </p>
+
+                </div>
+
+
+                <!-- Skill 5 -->
+                <div class="bg-white rounded-3xl shadow-md p-8 md:p-10">
+
+                    <h3 class="text-2xl md:text-3xl font-bold text-slate-800">
+                        Tailwind CSS
+                    </h3>
+
+                    <p class="text-lg md:text-xl text-slate-700 mt-5 leading-relaxed">
+                        I can design modern and responsive websites using Tailwind CSS.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================
+             e. Training & Certification
+             DaisyUI Modal
+        ================================== -->
+        <section class="mb-12">
+
+            <h2 class="text-3xl font-bold text-center mb-8">
+                Training & Certification
+            </h2>
+
+
+            <div class="grid md:grid-cols-2 gap-6">
+
+
+                <!-- Training Card -->
+                <div class="bg-white rounded-2xl shadow-lg p-6">
+
+                    <h3 class="text-xl font-bold">
+                        Geospatial Data Analysis & Management
+                    </h3>
+
+                    <p class="text-gray-600 mt-3">
+                        BIM / EDGE Project
+                    </p>
+
+                    <p class="text-gray-500 mt-2">
+                        Basic Level Training
+                    </p>
+
+
+                    <!-- DaisyUI Modal Button -->
+                    <label for="training-modal" class="btn btn-primary mt-5">
+
+                        View Certificate
+
+                    </label>
+
+                </div>
+
+
+                <!-- Another Training -->
+                <div class="bg-white rounded-2xl shadow-lg p-6">
+
+                    <h3 class="text-xl font-bold">
+                        Web Design
+                    </h3>
+
+                    <p class="text-gray-600 mt-3">
+                        HTML, CSS, Tailwind CSS
+                    </p>
+
+                    <p class="text-gray-500 mt-2">
+                        Professional Training
+                    </p>
+
+                    <label for="web-modal" class="btn btn-primary mt-5">
+
+                        View Details
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+            <!-- DaisyUI Modal 1 -->
+            <input type="checkbox" id="training-modal" class="modal-toggle" />
+
+            <div class="modal" role="dialog">
+
+                <div class="modal-box">
+
+                    <h3 class="text-2xl font-bold">
+                        Training Certification
+                    </h3>
+
+                    <p class="py-4">
+                        Geospatial Data Analysis & Management
+                        training completed under BIM / EDGE Project.
+                    </p>
+
+                    <p class="text-gray-600">
+                        Training included GIS, geospatial data,
+                        QGIS and spatial data management.
+                    </p>
+
+                    <div class="modal-action">
+
+                        <label for="training-modal" class="btn">
+                            Close
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- DaisyUI Modal 2 -->
+            <input type="checkbox" id="web-modal" class="modal-toggle" />
+
+            <div class="modal" role="dialog">
+
+                <div class="modal-box">
+
+                    <h3 class="text-2xl font-bold">
+                        Web Design Training
+                    </h3>
+
+                    <p class="py-4">
+                        HTML, CSS, Tailwind CSS, DaisyUI
+                        and basic JavaScript.
+                    </p>
+
+                    <div class="modal-action">
+
+                        <label for="web-modal" class="btn">
+                            Close
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             f. Working Experience
+        ========================== -->
+        <section class="mb-12">
+
+            <h2 class="text-3xl font-bold text-center mb-8">
+                Working Experience
+            </h2>
+
+
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+
+                <div class="border-l-4 border-gray-800 pl-6">
+
+                    <h3 class="text-2xl font-bold">
+                        GIS / Web Design Learner
+                    </h3>
+
+                    <p class="text-gray-500 mt-2">
+                        2026 - Present
+                    </p>
+
+                    <p class="mt-4 text-gray-600 leading-relaxed">
+                        Currently developing skills in GIS,
+                        Web Design, HTML, CSS, Tailwind CSS,
+                        DaisyUI and JavaScript.
+                    </p>
+
+                </div>
+
+
+                <div class="border-l-4 border-gray-800 pl-6 mt-8">
+
+                    <h3 class="text-2xl font-bold">
+                        GIS Training Participant
+                    </h3>
+
+                    <p class="text-gray-500 mt-2">
+                        2026
+                    </p>
+
+                    <p class="mt-4 text-gray-600 leading-relaxed">
+                        Completed training in Geospatial Data
+                        Analysis and Management with practical
+                        experience in GIS-related tools.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- Footer Section -->
+    <footer class="text-center py-6 text-sm text-gray-500 border-t border-gray-200 mt-12">
+        <p class="font-medium">My Portfolio</p>
+        <p>Simple Personal Portfolio Website</p>
+        <p id="DateTime"></p>
     </footer>
+    <script src="/script.js"></script>
+
+
 </body>
 
 </html>
